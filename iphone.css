@@ -1,0 +1,129 @@
+/* mac-style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a, .login-button, .about-button {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #111111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover, .about-button:hover, nav ul li a:hover {
+    background-color: #cacbcc;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background: #f8f8f8;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.video {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image {
+    flex: 1 1 220px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px; /* Ensure all images have the same container width */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Set a consistent max height for all images */
+    object-fit: contain; /* Ensure images are contained within the max height */
+    border-radius: 10px;
+}
+
+.image h2 {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0 0;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #484948;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
